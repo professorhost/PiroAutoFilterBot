@@ -9,9 +9,9 @@ class script(object):
 
 ⚠️𝖬𝗈𝗋𝖾 𝖧𝖾𝗅𝗉 𝖧𝗂𝗍 /help
 
-🙋🏻‍♂️ 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 @kwicbotupdates
+🙋🏻‍♂️ 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 @MSM_Updates
 
-😎 𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖻𝗒 @kwic2002
+😎 𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖻𝗒 @MSMchat
 """
     HELP_TXT = """
 🙋🏻‍♂️   𝖧𝖾𝗅𝗅𝗈𝗈𝗈  {} 🤓
@@ -21,7 +21,7 @@ class script(object):
 ○  𝖲𝖾𝖺𝗋𝖼𝗁 𝗎𝗌𝗂𝗇𝗀 𝗂𝗇𝗅𝗂𝗇𝖾 𝗆𝗈𝖽𝖾
 𝖳𝗁𝗂𝗌 𝗆𝖾𝗍𝗁𝗈𝖽 𝗐𝗈𝗋𝗄𝗌 𝗈𝗇 𝖺𝗇𝗒 𝖼𝗁𝖺𝗍, 𝖩𝗎𝗌𝗍 𝗍𝗒𝗉𝖾 <b>Bot Username</b> 𝖺𝗇𝖽 𝗍𝗁𝖾𝗇 𝗅𝖾𝖺𝗏𝖾 𝖺 𝗌𝗉𝖺𝖼𝖾 𝖺𝗇𝖽 𝗌𝖾𝖺𝗋𝖼𝗁 𝖺𝗇𝗒 𝗆𝗈𝗏𝗂𝖾 𝗒𝗈𝗎 𝗐𝖺𝗇𝗍...
 
-🙋🏻‍♂️ 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 @kwic2002
+🙋🏻‍♂️ 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 @MSM_Updates
 
 ○ 𝖠𝗏𝖺𝗂𝗅𝖺𝖻𝗅𝖾 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌
      
@@ -38,10 +38,10 @@ class script(object):
 
 ○𝖣𝗈𝗇𝗍 𝖲𝗉𝖺𝗆 𝖬𝖾...🤒
 
-😎 𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖻𝗒 @kwic2002
+😎 𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖻𝗒 @MSMchat
 """
     ABOUT_TXT = """
-○ 𝖢𝗋𝖾𝖺𝗍𝗈𝗋 : <a href='https://t.me/kwic2002'>𝖳𝗁𝗂𝗌 𝖯𝖾𝗋𝗌𝗈𝗇</a>
+○ 𝖢𝗋𝖾𝖺𝗍𝗈𝗋 : <a href='https://t.me/MSM_Updates'>𝖳𝗁𝗂𝗌 𝖯𝖾𝗋𝗌𝗈𝗇</a>
 ○ 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾 : 𝖯𝗒𝗍𝗁𝗈𝗇 𝟥 
 ○ 𝖫𝗂𝖻𝗋𝖺𝗋𝗒 : 𝖯𝗒𝗋𝗈𝗀𝗋𝖺𝗆 𝖺𝗌𝗒𝗇𝖼𝗂𝗈 𝟢.𝟣𝟩.𝟣 
 ○ 𝖲𝖾𝗋𝗏𝖾𝗋 : Contabo
@@ -52,14 +52,14 @@ class script(object):
 Special Thanks to EvaMaria and Professor-Bot for the codes 
 <b>DEV:</b>
 
-- <a href=https://t.me/kwicadmin>『ᴘɪʀᴏ』</a>
+- <a href=https://t.me/MSMadminBot>『ᴘɪʀᴏ』</a>
 - Source - https://github.com/heheh/pattiche """
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and PiroAutoFilterBot will respond whenever a keyword is found the message
 
 <b>NOTE:</b>
-1. kwicbot should have admin privillage.
+1. This should have admin privillage.
 2. only admins can add filters in a chat.
 3. alert buttons have a limit of 64 characters.
 
@@ -84,7 +84,7 @@ Special Thanks to EvaMaria and Professor-Bot for the codes
 3. Buttons should be properly parsed as markdown format
 
 <b>URL buttons:</b>
-<code>[Button Text](buttonurl:https://t.me/PiroAutoFilterBot)</code>
+<code>[Button Text](buttonurl:https://t.me/MSM_Updates)</code>
 
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
