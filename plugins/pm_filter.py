@@ -760,27 +760,23 @@ async def auto_filter(client, msg, spoll=False):
         cap = f"<b><i>👋 𝖧𝖾𝗅𝗅𝗈 𝖳𝗁𝖾𝗋𝖾...!!!\n📁 𝖸𝗈𝗎𝗋 𝖥𝗂𝗅𝖾𝗌 𝖠𝗋𝖾 𝖱𝖾𝖺𝖽𝗒\n\n♨️ 𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖡𝗒 @KWICVER2bot</b></i>"
     if imdb and imdb.get('poster'):
         try:
-            hehe =  await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
-                                      reply_markup=InlineKeyboardMarkup(btn))
-            if SELF_DELETE:
-                await asyncio.sleep(300)
-                await hehe.delete()
+            hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+            await asyncio.sleep(IMDB_DELET_TIME)
+            await hehe.delete()            
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
-            hmm = await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
-            if SELF_DELETE:
-                await asyncio.sleep(300)
-                await hmm.delete()
+            hmm = await message.reply_photo(photo=poster, caption=cap, reply_markup=InlineKeyboardMarkup(btn))           
+            await asyncio.sleep(IMDB_DELET_TIME)
+            await hmm.delete()            
         except Exception as e:
             logger.exception(e)
             fek = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
-            if SELF_DELETE:
-                await asyncio.sleep(300)
-                await fek.delete()
+            await asyncio.sleep(IMDB_DELET_TIME)
+            await fek.delete()
     else:
         fuk = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
-        await asyncio.sleep(300)
+        await asyncio.sleep(IMDB_DELET_TIME)
         await fuk.delete()        
     if spoll:
         await msg.message.delete()
