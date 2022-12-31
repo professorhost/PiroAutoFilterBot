@@ -90,13 +90,13 @@ async def next_page(bot, query):
         ]
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'🔮 {search} 🔮', 'reqst')
+            InlineKeyboardButton(f'🎥 {search} 🎥', 'reqst')
         ]
     )
     btn.insert(1,
         [
-            InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info'),
-            InlineKeyboardButton("🖇 𝖦𝖾𝗍 𝖳𝗁𝖾 𝖥𝗂𝗅𝖾𝗌", url=f"https://t.me/{temp.U_NAME}")
+            InlineKeyboardButton(f'🔎 𝐒𝐞𝐚𝐫𝐜𝐡 𝐅𝐨𝐫𝐦𝐚𝐭', 'info'),
+            InlineKeyboardButton("💬 𝐁𝐨𝐭 𝐏𝐌", url=f"https://t.me/{temp.U_NAME}")
         ]
     )
 
@@ -697,13 +697,13 @@ async def auto_filter(client, msg, spoll=False):
         ]
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'🔮 {search} 🔮', 'reqst')
+            InlineKeyboardButton(f'🎥 {search} 🎥', 'reqst')
         ]
     )
     btn.insert(1,
         [
-            InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info'),
-            InlineKeyboardButton("🖇 𝖦𝖾𝗍 𝖳𝗁𝖾 𝖥𝗂𝗅𝖾𝗌", url=f"https://t.me/{temp.U_NAME}")
+            InlineKeyboardButton(f'🔎 𝐒𝐞𝐚𝐫𝐜𝐡 𝐅𝐨𝐫𝐦𝐚𝐭', 'info'),
+            InlineKeyboardButton("💬 𝐁𝐨𝐭 𝐏𝐌", url=f"https://t.me/{temp.U_NAME}")
         ]
     )    
 
