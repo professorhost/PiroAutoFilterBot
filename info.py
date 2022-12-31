@@ -39,11 +39,11 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', '')
 
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'kwicadmin')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', 'True')), False)
 IMDB = is_enabled((environ.get('IMDB', 'False')), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', 'True')), False)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", '<code>{file_name}<code> \n\n♻️ <b> Uploaded by : @MSMchat </b>')
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", '<code>{file_name}</code> \n\n♻️ <b> Uploaded by : @MSMchat </b>')
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", '')
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "🎥𝖳𝗂𝗍𝗅𝖾: <a href={url}>{title}</a> \n📆𝖸𝖾𝖺𝗋: {year} \n🎭𝖦𝖾𝗇𝖾𝗋𝗌: {genres} \n⭐️𝖱𝖺𝗍𝗂𝗇𝗀𝗌: {rating}/10 \n🎙Languages: #{language}")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
