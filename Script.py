@@ -41,19 +41,18 @@ class script(object):
 😎 𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖻𝗒 @MSMchat
 """
     ABOUT_TXT = """
-○ 𝖢𝗋𝖾𝖺𝗍𝗈𝗋 : <a href='https://t.me/MSM_Updates'>𝖳𝗁𝗂𝗌 𝖯𝖾𝗋𝗌𝗈𝗇</a>
 ○ 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾 : 𝖯𝗒𝗍𝗁𝗈𝗇 𝟥 
 ○ 𝖫𝗂𝖻𝗋𝖺𝗋𝗒 : 𝖯𝗒𝗋𝗈𝗀𝗋𝖺𝗆 𝖺𝗌𝗒𝗇𝖼𝗂𝗈 𝟢.𝟣𝟩.𝟣 
-○ 𝖲𝖾𝗋𝗏𝖾𝗋 : Contabo
+○ 𝖲𝖾𝗋𝗏𝖾𝗋 : <a href=https://t.me/MSMadminBot>𝙵𝚛𝚎𝚎 𝚅𝙿𝚂</a>
 ○ 𝖣𝖺𝗍𝖺𝖻𝖺𝗌𝖾 : <a href='https://www.mongodb.com'>𝖬𝗈𝗇𝗀𝗈𝖣𝖡 𝖥𝗋𝖾𝖾 𝖳𝗂𝖾𝗋</a>
 ○ 𝖡𝗎𝗂𝗅𝖽 𝖲𝗍𝖺𝗍𝗎𝗌 : v1.0.1 [BeTa]
-○ 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 𝖦𝗋𝗈𝗎𝗉 : <a href='https://t.me/kwicadmin'>𝖳𝖺𝗉 𝖧𝖾𝗋𝖾</a>"""
+○ 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 𝖦𝗋𝗈𝗎𝗉 : <a href='https://t.me/MSMchat'>𝖳𝖺𝗉 𝖧𝖾𝗋𝖾</a>"""
     SOURCE_TXT = """<b>NOTE:</b>
 Special Thanks to EvaMaria and Professor-Bot for the codes 
 <b>DEV:</b>
 
-- <a href=https://t.me/MSMadminBot>『ᴘɪʀᴏ』</a>
-- Source - https://github.com/heheh/pattiche """
+- Developer - @MSMadminBot
+- Source - <a href=https://t.me/MSMadminBot>𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴</a> """
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and PiroAutoFilterBot will respond whenever a keyword is found the message
@@ -76,11 +75,11 @@ Special Thanks to EvaMaria and Professor-Bot for the codes
 • /delallg - <code>Delete all global filter</code>"""
     BUTTON_TXT = """Help: <b>Buttons</b>
 
-- PiroAutoFilterBot Supports both url and alert inline buttons.
+- This Bot Supports both url and alert inline buttons.
 
 <b>NOTE:</b>
 1. Telegram will not allows you to send buttons without any content, so content is mandatory.
-2. PiroAutoFilterBot supports buttons with any telegram media type.
+2. This Bot supports buttons with any telegram media type.
 3. Buttons should be properly parsed as markdown format
 
 <b>URL buttons:</b>
@@ -147,7 +146,7 @@ This module only works for my admins
 • 𝖳𝗈𝗍𝖺𝗅 𝖢𝗁𝖺𝗍𝗌: <code>{}</code>
 • 𝖴𝗌𝖾𝖽 𝖲𝗍𝗈𝗋𝖺𝗀𝖾: <code>{}</code>
 
-😎 𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖻𝗒 @kwicbotupdates
+😎 𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖻𝗒 @MSM_Updates
 """
     LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
