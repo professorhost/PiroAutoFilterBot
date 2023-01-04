@@ -160,7 +160,6 @@ async def start(client, message):
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
                     caption=f_caption,
-                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝗞𝗪𝗜𝗖𝗕𝗢𝗧 𝗨𝗣𝗗𝗔𝗧𝗘𝗦 ⚔️', url='https://t.me/kwicbotupdates') ] ] ),
                     protect_content=msg.get('protect', False),
                     )
             except Exception as e:
@@ -255,7 +254,6 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝗞𝗪𝗜𝗖𝗕𝗢𝗧 𝗨𝗣𝗗𝗔𝗧𝗘𝗦 ⚔️', url='https://t.me/kwicbotupdates') ] ] ),
         protect_content=True if pre == 'filep' else False,
         )
                     
