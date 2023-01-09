@@ -23,7 +23,7 @@ async def series(_, message):
 
 @Client.on_message(filters.command("tutorial", CMD))
 async def tutorial(_, message):
-    await message.reply_text("𝖢𝗁𝖾𝖼𝗄𝗈𝗎𝗍 @kwicbotupdates 𝖥𝗈𝗋 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 😎")
+    await message.reply_text("𝖢𝗁𝖾𝖼𝗄𝗈𝗎𝗍 @MSM_Updates 𝖥𝗈𝗋 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 😎")
 
 @Client.on_message(filters.command("ping", CMD))
 async def ping(_, message):
