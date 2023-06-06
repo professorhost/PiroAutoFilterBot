@@ -157,3 +157,13 @@ Added By - {}
 ID - <code>{}</code>
 Name - {}
 """
+
+    G_SPELL = """<b><i>Requested Movie Not Available Right Now</i></b>
+
+<code>⭕️ Just Type Movie Name with Year</code>
+<code>⭕️ For Example</code> <b>Master 2021</b>
+<code>⭕ Don't Ask Theatre prints</code>
+<code>⭕️ Search in Google for Correct Spelling</code>
+<code>⭕️ Any Problem Contact Admin</code> @MSMadminBot
+"""
+    
