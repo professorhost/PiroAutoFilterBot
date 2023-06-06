@@ -779,6 +779,8 @@ async def auto_filter(client, msg, spoll=False):
 
 
 async def advantage_spell_chok(msg):
+    mv_id = msg.id
+    mv_rqst = msg.text
     query = re.sub(
         r"\b(pl(i|e)*?(s|z+|ease|se|ese|(e+)s(e)?)|((send|snd|giv(e)?|gib)(\sme)?)|movie(s)?|new|latest|br((o|u)h?)*|^h(e|a)?(l)*(o)*|mal(ayalam)?|t(h)?amil|file|that|find|und(o)*|kit(t(i|y)?)?o(w)?|thar(u)?(o)*w?|kittum(o)*|aya(k)*(um(o)*)?|full\smovie|any(one)|with\ssubtitle(s)?)",
         "", msg.text, flags=re.IGNORECASE)  # plis contribute some common words
@@ -787,9 +789,14 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("<b><i>I couldn't find any movie in that name.</b><i/>")
-        await asyncio.sleep(8)
+        reqst_gle = mv_rqst.replace(" ", "+")
+        btn = [[
+            InlineKeyboardButton('🔎 Gᴏᴏɢʟᴇ Sᴇᴀʀᴄʜ 🔍', url=f'https://google.com/search?q={reqst_gle}')
+        ]]        
+        k=await msg.reply_text(text=script.G_SPELL, reply_markup=InlineKeyboardMarkup(btn))    
+        await asyncio.sleep(60)
         await k.delete()
+        await msg.delete()
         return
     regex = re.compile(r".*(imdb|wikipedia).*", re.IGNORECASE)  # look for imdb / wiki results
     gs = list(filter(regex.match, g_s))
@@ -816,24 +823,23 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply("𝖨 𝖼𝗈𝗎𝗅𝖽𝗇'𝗍 𝖿𝗂𝗇𝖽 𝖺𝗇𝗒𝗍𝗁𝗂𝗇𝗀 𝗋𝖾𝗅𝖺𝗍𝖾𝖽 𝗍𝗈 𝗍𝗁𝖺𝗍. 𝗖𝗵𝗲𝗰𝗸 𝘆𝗼𝘂𝗿 𝘀𝗽𝗲𝗹𝗹𝗶𝗻𝗴")
-        await asyncio.sleep(8)
+        reqst_gle = mv_rqst.replace(" ", "+")
+        btn = [[
+            InlineKeyboardButton('🔎 Gᴏᴏɢʟᴇ Sᴇᴀʀᴄʜ 🔍', url=f'https://google.com/search?q={reqst_gle}')
+        ]]        
+        k=await msg.reply_text(text=script.G_SPELL, reply_markup=InlineKeyboardMarkup(btn))    
+        await asyncio.sleep(60)
         await k.delete()
+        await msg.delete()
         return
-    SPELL_CHECK[msg.id] = movielist
+    SPELL_CHECK[msg.message_id] = movielist
     btn = [[
-        InlineKeyboardButton(
-            text=movie.strip(),
-            callback_data=f"spolling#{user}#{k}",
-        )
-    ] for k, movie in enumerate(movielist)]
-    load = btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    zz = await msg.reply('<b><i>𝖲𝖾𝖺𝗋𝖼𝗁𝗂𝗇𝗀 𝖿𝗈𝗋 𝗒𝗈𝗎 𝗋𝖾𝗌𝗎𝗅𝗍 𝗂𝗇 𝖨𝖬𝖣𝖻 𝖶𝖺𝗂𝗍...🧐<i/></b>')
-    await asyncio.sleep(3)
-    sp = await zz.edit("<b><i>𝖨 𝖼𝗈𝗎𝗅𝖽𝗇'𝗍 𝖿𝗂𝗇𝖽 𝖺𝗇𝗒𝗍𝗁𝗂𝗇𝗀 𝗋𝖾𝗅𝖺𝗍𝖾𝖽 𝗍𝗈 𝗍𝗁𝖺𝗍\n𝖣𝗂𝖽 𝗒𝗈𝗎 𝗆𝖾𝖺𝗇 𝖺𝗇𝗒 𝗈𝗇𝖾 𝗈𝖿 𝗍𝗁𝖾𝗌𝖾?</i></b>",
-                    reply_markup=InlineKeyboardMarkup(btn))
-    await asyncio.sleep(21)
-    await sp.delete()
+            InlineKeyboardButton('🔎 Gᴏᴏɢʟᴇ Sᴇᴀʀᴄʜ 🔍', url=f'https://google.com/search?q={reqst_gle}')
+        ]]
+    k=await msg.reply_text(text=script.G_SPELL, reply_markup=InlineKeyboardMarkup(btn))    
+    await asyncio.sleep(60)
+    await k.delete()
+    await msg.delete()
 
 
 async def manual_filters(client, message, text=False):
